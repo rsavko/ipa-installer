@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manifest Generator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        html {height:100%}
+        body {height:100%}
+        .jumbotron {height:100%}
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+
+
+            <h2>Here's Your Link!</h2>
+            <br><br>
+            <p>Open this link on your iOS device in order to install it. Link will expire in {expiration} minutes</p>
+            <textarea class="form-control" rows="2" id="url">{url}</textarea>
+            <br>
+            <p><a class="btn btn-primary btn-lg" href="/" role="button">Try again</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

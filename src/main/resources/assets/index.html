@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manifest Generator</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        html {height:100%}
+        body {height:100%}
+        .jumbotron {height:100%}
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>Create an Installation Link for iOS App</h2>
+            <br><br>
+            <p>If you have a direct link to .ipa file - then paste it here:</p>
+
+            <form method="POST" action="/link" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="input-group" name="form">
+                        <input type="url" name="link" class="form-control" placeholder='URL to .ipa file...' required/>
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+
+            <br><br>
+            <p>If you have .ipa file - you can upload it here:</p>
+
+            <form method="POST" action="/file" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="input-group input-file" name="form">
+                        <input type="text" class="form-control" placeholder='Choose .ipa file...'/>
+                        <span class="input-group-btn">
+        		        <button class="btn btn-default btn-choose" type="button">Choose</button>
+    		        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p class="text-center">
+        If you find this service useful - please consider to<a href="https://www.paypal.me/RomanSavko" target="_blank"><input type="image" class="btn" style="padding-top:0;" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png" alt="Donate"/></a>
+    </p>
+</div>
+<script src="/assets/init.js"></script>
+</body>
+</html>

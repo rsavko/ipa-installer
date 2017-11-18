@@ -1,0 +1,7 @@
+{
+  "http.port": 80,
+  "aws.key": "YOUR_AWS_KEY",
+  "aws.secret": "YOUR_AWS_SECRET",
+  "object.expiration.delay": 30,
+  "object.expiration.timeunit":"MINUTES"
+}
