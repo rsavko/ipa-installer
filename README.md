@@ -8,4 +8,4 @@ mvn clean package -DskipTests
 
 Use run.sh to run instance.
 
-Live insstance: http://reactivebytes.com/
+Live insstance: https://reactivebytes.com/
