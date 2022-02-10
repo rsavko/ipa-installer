@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <stack.version>3.5.0</stack.version>
+        <stack.version>3.5.4</stack.version>
         <slf4jVersion>1.7.9</slf4jVersion>
     </properties>
 
